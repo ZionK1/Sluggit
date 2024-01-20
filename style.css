@@ -19,14 +19,19 @@ header {
     height: auto;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 nav li {
-    display: inline;
     margin-right: 10px;
 }
 

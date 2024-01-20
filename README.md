@@ -1,1 +1,1 @@
-# ichimoku-learning
+# Ichimoku Cloud Learning

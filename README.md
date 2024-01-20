@@ -1,1 +1,1 @@
-# Ichimoku Cloud Learning
+# Sluggit

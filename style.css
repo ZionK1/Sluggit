@@ -27,12 +27,27 @@ header {
 /* Updated styles for the title */
 h1 {
     margin-left: 5px; /* Adjust the margin as needed */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ucsc-logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
     display: flex;
 }
 

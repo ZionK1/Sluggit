@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #0018f1;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -24,6 +24,11 @@ header {
     align-items: center;
 }
 
+/* Updated styles for the title */
+h1 {
+    margin-left: 5px; /* Adjust the margin as needed */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -37,12 +42,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #474747;
     padding: 10px 15px;
     display: inline-block;
-    background-color: #555;
-    border: 1px solid #333;
-    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px; /* Rounded corners */
     transition: background-color 0.3s ease;
 }
 
@@ -62,9 +67,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Hide all routes by default */
-.route {
-    display: none;
 }

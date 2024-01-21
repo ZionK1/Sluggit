@@ -15,17 +15,15 @@ const PageWithTitle = ({ title, children }) => (
   </div>
 );
 
+
 // Navigation bar component
 const NavBar = () => (
   <nav>
     <ul>
-      <li><Link to="/Home">Home</Link></li>
-      <li><Link to="/SlugEvents">Slug Events</Link></li>
-      <li><Link to="/SlugPals">Slug Pals</Link></li>
-      <li><Link to="/SlugHousing">Slug Housing</Link></li>
     </ul>
   </nav>
 );
+
 
 function App() {
   return (
@@ -34,11 +32,11 @@ function App() {
       <Routes>
         <Route
           path=""
-          element={<PageWithTitle title="Home"><Home /></PageWithTitle>}
+          element={<PageWithTitle title=""><Home /></PageWithTitle>}
         />
         <Route
           path="/Home"
-          element={<PageWithTitle title="Home"><Home /></PageWithTitle>}
+          element={<PageWithTitle title=""><Home /></PageWithTitle>}
         />
         <Route
           path="/SlugEvents"

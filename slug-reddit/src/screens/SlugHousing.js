@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'; // Import your stylesheet
 
 const SlugHousing = () => {
   return (

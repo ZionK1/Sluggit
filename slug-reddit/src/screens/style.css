@@ -1,10 +1,12 @@
-body {
+.home {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #2D3250;
+    width: 100%;
 }
 
-header {
+.home header {
     background-color: #424769;
     color: #fff;
     text-align: center;
@@ -14,76 +16,63 @@ header {
     align-items: center;
 }
 
-.ucsc-logo {
-    width: 50px; /* Adjust the width as needed */
-    height: auto;
-}
-
-.header-content {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
-
-/* Updated styles for the title */
-h1 {
-    margin-left: 5px; /* Adjust the margin as needed */
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.ucsc-logo {
-    width: 50px; /* Adjust the width as needed */
-    height: auto;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    list-style-type: none;
+.home header h1 {
+    font-size: 72px;
     padding: 0;
     margin: 0;
-    display: flex;
-    display: flex;
 }
 
-nav li {
-    margin-right: 10px;
-    font-family: 'Poppins', sans-serif;
-}
-
-nav a {
-    text-decoration: none;
-    color: #474747;
-    padding: 10px 15px;
-    display: inline-block;
-    background-color: #ffffff;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 20px; /* Rounded corners */
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #777;
+.ucsc-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
 }
 
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+main .welcome {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
+
+main .welcome h1 {
+    margin: auto;
+    font-size: 100px;
+    color: white;
+}
+
+main .welcome h2 {
+    margin: auto;
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+}
+
+main .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main .buttons .button {
+    border: 5px solid #424769;
+    background-color: white;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+main .buttons .button:hover {
+    background-color: #eeeeee;
+}
+
 
 /* Additional media query for screens smaller than 300px */
 @media only screen and (max-width: 600px) {

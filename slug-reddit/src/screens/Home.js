@@ -4,29 +4,24 @@ import ucscSlugLogo from './ucscslug.png'; // Import the image
 
 const HomePage = () => {
   return (
-    <div>
+    <div class="home">
       <header>
         {/* UCSC Slug logo */}
         <img src={ucscSlugLogo} alt="UCSC Slug Logo" className="ucsc-logo" />
-
-        {/* Sluggit main header */}
-        <div className="header-content">
-          <h1>Sluggit</h1>
-
-          {/* Navigation */}
-          <nav>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="slugPals.html">SlugPals</a></li>
-              <li><a href="slugHousing.html">SlugHousing</a></li>
-              <li><a href="slugEvents.html">SlugEvents</a></li>
-            </ul>
-          </nav>
-        </div>
+        <h1>Sluggit</h1>
       </header>
 
       <main>
         {/* Content for the Home page goes here */}
+        <div class="welcome">
+          <h1>Welcome</h1>
+          <h2>Choose a category to get started</h2>
+        </div>
+        <div class="buttons">
+          <div class="button">Housing</div>
+          <div class="button">Clubs</div>
+          <div class="button">SlugPals</div>
+        </div>
       </main>
 
       <footer>

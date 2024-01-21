@@ -54,10 +54,26 @@ function TabNavigator() {
   );
 }
 
+// const WelcomeMessage = () => (
+//   <>
+//     <h1>Welcome</h1>
+//     <h2>Choose a category to get started</h2>
+//   </>
+// );
+
+// function DisplayWelcome() {
+//   return (
+//     <>
+//       <WelcomeMessage />
+//     </>
+//   )
+// }
+
 function App() {
   return (
     <Router>
       <TabNavigator />
+      {/* <DisplayWelcome /> */}
     </Router>
   );
 }

@@ -15,7 +15,7 @@ header {
 }
 
 .ucsc-logo {
-    width: 50px; /* Adjust the width as needed */
+    width: 80px; /* Adjust the width as needed */
     height: auto;
 }
 
@@ -28,19 +28,11 @@ header {
 
 /* Updated styles for the title */
 h1 {
+    font-weight: bold !important;
     margin-left: 5px; /* Adjust the margin as needed */
     padding: 10px;
+    font-size: 50px;
     font-family: 'Poppins', sans-serif;
-}
-
-.ucsc-logo {
-    width: 50px; /* Adjust the width as needed */
-    height: auto;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
 }
 
 nav ul {
@@ -85,19 +77,20 @@ footer {
     width: 100%;
 }
 
-/* Additional media query for screens smaller than 300px */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     header {
         padding: 10px;
         background-color: #424769;
         box-sizing: border-box;
     }
 
+    /*
     body {
-        width: 100%; /* Set the body width to 100% */
-        margin: 0; /* Remove default margin */
-        overflow-x: hidden; /* Hide horizontal overflow */
-    }
+        width: 100%; 
+        margin: 0; 
+        overflow-x: hidden; 
+    } 
+    */
 
     .ucsc-logo {
         width: 60px;
@@ -105,12 +98,78 @@ footer {
     }
 
     h1 {
-        margin-left: -12px;
-        font-size: 18px;
+        font-weight: bold !important;
+        margin-left: -5px;
+        padding: -10px 12px;
+        font-size: 30px;
     }
 
     nav a {
-        padding: 4px 6px;
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+        background-color: #424769;
+        box-sizing: border-box;
+    }
+
+    /*
+    body {
+        width: 100%; 
+        margin: 0; 
+        overflow-x: hidden; 
+    } 
+    */
+
+    .ucsc-logo {
+        width: 50px;
+        margin-right: 2px;
+    }
+
+    h1 {
+        font-weight: bold !important;
+        margin-left: -10px;
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 10px 6px;
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        padding: 10px;
+        background-color: #424769;
+        box-sizing: border-box;
+    }
+
+    /*
+    body {
+        width: 100%; 
+        margin: 0; 
+        overflow-x: hidden; 
+    } 
+    */
+
+    .ucsc-logo {
+        width: 40px;
+        margin-right: 2px;
+    }
+
+    h1 {
+        font-weight: bold !important;
+        margin-left: -10px;
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 6px 4px;
+        font-size: 8px;
     }
 }

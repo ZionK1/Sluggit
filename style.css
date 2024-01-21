@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #2D3250;
@@ -34,10 +34,14 @@ header {
 h1 {
     margin-left: 5px; /* Adjust the margin as needed */
     padding: 10px;
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 100px;
+=======
+    font-family: 'Poppins', sans-serif;
+>>>>>>> c79464fd025ea9d557114e6959ea429dc351d037
 }
 
 .ucsc-logo {
@@ -60,6 +64,7 @@ nav ul {
 
 nav li {
     margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav a {
@@ -89,4 +94,34 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Additional media query for screens smaller than 300px */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+        background-color: #424769;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%; /* Set the body width to 100% */
+        margin: 0; /* Remove default margin */
+        overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+    .ucsc-logo {
+        width: 60px;
+        margin-right: 4px;
+    }
+
+    h1 {
+        margin-left: -12px;
+        font-size: 18px;
+    }
+
+    nav a {
+        padding: 4px 6px;
+        font-size: 10px;
+    }
 }

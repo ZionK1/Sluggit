@@ -10,7 +10,7 @@ header {
     text-align: center;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
 }
 
@@ -21,16 +21,15 @@ header {
 
 .header-content {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 
 /* Updated styles for the title */
 h1 {
     margin-left: 5px; /* Adjust the margin as needed */
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .ucsc-logo {

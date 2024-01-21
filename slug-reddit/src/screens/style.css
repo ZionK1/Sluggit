@@ -60,6 +60,8 @@ main .buttons {
 
 main .buttons .button {
     border: 5px solid #424769;
+    color: black;
+    text-decoration: none;
     background-color: white;
     border-radius: 30px; 
     padding: 10px;

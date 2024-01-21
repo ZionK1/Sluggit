@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 // SCREENS
-import Home from "./screens/Home";
-import SlugPals from "./screens/SlugPals";
-import SlugHousing from "./screens/SlugHousing";
-import SlugEvents from "./screens/SlugEvents";
+import Home from './screens/Home';
+import SlugPals from './screens/SlugPals';
+import SlugHousing from './screens/SlugHousing';
+import SlugEvents from './screens/SlugEvents';
 
 // Custom component to display titles
 const PageWithTitle = ({ title, children }) => (
@@ -27,12 +27,15 @@ const NavBar = () => (
   </nav>
 );
 
-function TabNavigator() {
-  console.log("TabNavigator being called");
+function App() {
   return (
-    <>
+    <Router>
       <NavBar />
       <Routes>
+        <Route
+          path=""
+          element={<PageWithTitle title="Home"><Home /></PageWithTitle>}
+        />
         <Route
           path="/Home"
           element={<PageWithTitle title="Home"><Home /></PageWithTitle>}
@@ -50,31 +53,8 @@ function TabNavigator() {
           element={<PageWithTitle title="Slug Housing"><SlugHousing /></PageWithTitle>}
         />
       </Routes>
-    </>
-  );
-}
-
-// const WelcomeMessage = () => (
-//   <>
-//     <h1>Welcome</h1>
-//     <h2>Choose a category to get started</h2>
-//   </>
-// );
-
-// function DisplayWelcome() {
-//   return (
-//     <>
-//       <WelcomeMessage />
-//     </>
-//   )
-// }
-
-function App() {
-  return (
-    <Router>
-      <TabNavigator />
-      {/* <DisplayWelcome /> */}
     </Router>
   );
 }
+
 export default App;
